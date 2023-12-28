@@ -1,15 +1,15 @@
 #
-# Be sure to run `pod lib lint BHCustomLibrary.podspec' to ensure this is a
+# Be sure to run `pod lib lint IDDFoundation.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'BHCustomLibrary'
-  s.version          = '0.1.0'
-  s.summary          = 'BHCustomLibrary'
+  s.name             = 'IDDFoundation'
+  s.version          = '0.5.0'
+  s.summary          = 'A short description of IDDFoundation.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,22 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/tianxiawoyougood/BHCustomLibrary.git'
+  s.homepage         = 'https://github.com/tianxiawoyougood/IDDFoundation'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sunbinhua' => 'sunbinhua@haowumc.com' }
-  s.source           = { :git => 'https://github.com/tianxiawoyougood/BHCustomLibrary.git', :tag => s.version.to_s }
+  s.author           = { 'sean' => '571100944@qq.com' }
+  s.source           = { :git => 'git@github.com:tianxiawoyougood/IDDFoundation.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'BHCustomLibrary/Classes/**/*'
+  s.source_files = 'IDDFoundation/Classes/**/*'
   
   # s.resource_bundles = {
-  #   'BHCustomLibrary' => ['BHCustomLibrary/Assets/*.png']
+  #   'IDDFoundation' => ['IDDFoundation/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'IDDFoundation/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'BHJSONValidator', '~>0.1.0'
 end
